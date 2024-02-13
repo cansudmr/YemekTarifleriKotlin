@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarifFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="267dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="95dp"
+        android:src="@drawable/gorselsecimi"
+        app:layout_constraintBottom_toTopOf="@+id/yemekIsmiText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yemekIsmiText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Yemek İsmini Giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/yemekMalzemesiText"
+        app:layout_constraintEnd_toEndOf="@+id/yemekMalzemesiText"
+        app:layout_constraintStart_toStartOf="@+id/yemekMalzemesiText"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/yemekMalzemesiText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="206dp"
+        android:ems="10"
+        android:hint="Yemek Malzemelerini Giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yemekIsmiText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
