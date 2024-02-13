@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        setSupportActionBar(findViewById(R.id.my_toolbar))
+
 
 
     }
@@ -28,8 +30,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        val action = ListeFragmentDirections.actionListeFragmentToTarifFragment()
-        Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
+        if(item.itemId == R.id.yemek_ekleme_item){
+            val action = ListeFragmentDirections.actionListeFragmentToTarifFragment()
+            Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
+        }
+
         return super.onOptionsItemSelected(item)
     }
 }
