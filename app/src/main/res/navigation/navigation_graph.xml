@@ -22,5 +22,13 @@
         <action
             android:id="@+id/action_tarifFragment_to_listeFragment"
             app:destination="@id/listeFragment" />
+        <argument
+            android:name="bilgi"
+            app:argType="string"
+            android:defaultValue="menudengeldim" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
 </navigation>

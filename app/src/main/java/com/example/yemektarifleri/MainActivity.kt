@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.yemek_ekleme_item){
-            val action = ListeFragmentDirections.actionListeFragmentToTarifFragment()
+            val action = ListeFragmentDirections.actionListeFragmentToTarifFragment("menudengeldim", 0)
             Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
         }
 
